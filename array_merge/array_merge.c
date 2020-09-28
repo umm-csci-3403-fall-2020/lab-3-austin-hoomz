@@ -91,6 +91,7 @@ int* array_merge(int num_arrays, int* sizes, int** values) {
 
   if (num_arrays == 0){ 
 	result = (int*)malloc(sizeof(int)*0);
+	free(temp);
 	return result;
   } else {
   
